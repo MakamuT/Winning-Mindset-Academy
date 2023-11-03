@@ -1,0 +1,123 @@
+body {
+    background-color: black;
+    font: Sans-serif;
+    font-size: 15px;
+    color: whitesmoke;
+}
+.start{
+    background-image: url(IMG-20230923-WA0018.jpg);
+    background-repeat: no-repeat;    
+}
+.start h5{
+    text-align: right;
+    margin-right: 10rem;
+    color: #ff8916;
+    font-family: 'Alegreya', serif;
+    margin-top: 18rem;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.navbar ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    text-align: right;
+    list-style:none;
+    position: relative;
+    background: linear-gradient(0deg, #1A1110, rgb(40, 43, 43));
+}
+.navbar a{
+    text-decoration:none;
+    color: #ff8955;
+    font-size: 2rem;
+    font-family: 'Alegreya', serif;
+}
+h1{
+    color:  #ff8955;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 45px;
+    font-family: 'Alegreya', serif;
+
+}
+p{
+    color:burlywood;
+    font-size:25px;
+    font-family: 'Quicksand', sans-serif;
+}
+h5{
+    text-align: center;
+    font-size: 40px;
+    color:#ff8955;  
+    font-family: 'Satisfy', cursive;
+}
+#home ul{
+    color: burlywood;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 25px;
+    background-color: rgb(0,0,0);
+}
+label{
+    color: #ff8955;
+    font-size: 2rem;
+    background-color: rgb(0,0,0);
+}
+input{
+    background-color: rgb(0,0,0);
+    border: none;
+    color: burlywood;
+}
+#submit{
+    background-color: rgb(0,0,0);
+    border: none;
+    color: #ff8955;
+}
+#contact ul{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: burlywood;
+}
+#contact a{
+    text-decoration: none;
+    color: burlywood;
+}
+a:hover{
+    background-color: #ff8955;
+    color:#050801;
+    box-shadow: 0 0 5px #ff8955,
+                0 0 25px #ff8955,
+                0 0 50px #ff8955,
+                0 0 200px #ff8955;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+footer{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    text-align: right;
+    position:bottom-fixed;
+    background: linear-gradient(0deg, #1A1110, rgb(40, 43, 43));
+}
+footer a{
+    text-decoration:none;
+    font-size: 1.5rem;
+    color: #ff8955;
+    font-family:Alegreya, serif ;
+    transition: .5s;
+}
+
+
