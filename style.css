@@ -1,0 +1,160 @@
+@import url("https://fonts.googleis.com/css2?family");
+body {
+  background: #b56727;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: ivory;
+}
+li {
+  list-style: none;
+}
+.text {
+  font-family: "Alkatra", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  font-size: 55px;
+  text-transform: uppercase;
+  background: linear-gradient(#fc6a03, #ed820e, #ec9706);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+h6 {
+  font-family: "Just Another Hand", cursive;
+  font-weight: 400;
+  text-align: center;
+  font-size: 30px;
+  color: burlywood;
+}
+
+/**Navigation**/
+.navbar {
+  display: inline-block;
+  text-align: end;
+}
+.btn {
+  background-color: transparent;
+  background-image: url(img/IMG-20230923-WA0018-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: whitesmoke;
+  padding: 50px 50px;
+  border-radius: 5px;
+  border: #fc6a03;
+  cursor: pointer;
+}
+.navbar a {
+  display: block;
+  color: blanchedalmond;
+  text-decoration: none;
+  padding: 10px 15px;
+  list-style: none;
+}
+.navbar .navlink {
+  display: none;
+  position: absolute;
+  background-color: #ec9706;
+  min-width: 100px;
+  box-shadow: burlywood;
+}
+.navbar:hover .navlink {
+  display: block;
+}
+.navbar:hover button {
+  background-color: transparent;
+  rotate: 65deg;
+}
+.navbar a:hover {
+  background-color: burlywood;
+  box-shadow: 2px 2px 5px lavenderblush;
+  scale: 1.2;
+}
+/*home*/
+.gallery {
+  display: flex;
+  flex-direction: row;
+
+  width: 80%;
+  height: 500px;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  justify-content: right;
+}
+.item:nth-child(1) {
+  background-image: url(img/uni.png);
+}
+.item:nth-child(2) {
+  background-image: url(img/7\ distinction\ in\ Maths.png);
+}
+.item:nth-child(3) {
+  background-image: url(img/pass.png);
+}
+.item:nth-child(4) {
+  background-image: url(IMG-20231006-WA0005.jpg);
+}
+.item {
+  background-position: center;
+  background-size: cover;
+  transition: flex 0.8s ease;
+}
+.item:hover {
+  flex: 5;
+}
+
+/**Subjects**/
+.box {
+  display: flex;
+  flex-direction: row;
+}
+.card1 {
+  position: relative;
+  margin: 10% auto 0;
+  text-align: center;
+  width: 30%;
+  height: 300px;
+  background: linear-gradient(0deg, black, black, rgb(44, 43, 43));
+}
+
+.glow ::before,
+.glow::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #e6fb04,
+    #ff6600,
+    #00ff66,
+    #00ffff,
+    #ff00ff,
+    #ff0099,
+    #6e0dde,
+    #ff3300,
+    #099fff
+  );
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.glow::after {
+  filter: blur(40px);
+  opacity: 0.1;
+}
